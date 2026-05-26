@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>agarciadev</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icon.ico">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+
+<body id="top">
+    
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap ss-home">
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="container s-header__content">
+                
+                <div class="s-header__block">
+                    <div class="header-logo">
+                        <a class="logo" href="index.html">
+                            <!-- <img src="images/logo.svg" alt="Homepage"> -->
+                             <h3>agarciadev</h3>
+                        </a>
+                    </div>
+                    <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+                </div> <!-- end s-header__block -->
+            
+                <nav class="header-nav">    
+                    <ul class="header-nav__links">
+                        <li class="current"><a class="smoothscroll" href="#intro">Intro</a></li>
+                        <li><a class="smoothscroll" href="#about">About</a></li>
+                        <li><a class="smoothscroll" href="#services" data-i18n="nav_services">Menu</a></li>
+                        <li><a class="smoothscroll" href="#projects" data-i18n="nav_projects">Projects</a></li>
+                    </ul> <!-- end header-nav__links -->  
+                    
+                    <div class="header-contact">
+                        <!-- Language Switcher -->
+                        <div class="lang-switcher" style="display: flex; gap: 10px; justify-content: center; align-items: center;">
+                            <a href="#" class="lang-btn active" data-lang="es" style="color: var(--color-text-bold);">ES</a>
+                            <span style="color: var(--color-placeholder);">|</span>
+                            <a href="#" class="lang-btn" data-lang="en" style="color: var(--color-text-bold);">EN</a>
+                            <span style="color: var(--color-placeholder);">|</span>
+                            <button id="themeToggle" aria-label="Toggle theme" style="background: none; border: none; cursor: pointer; padding: 4px; display: flex; align-items: center; justify-content: center;">
+                                <svg id="iconSun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-text-bold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                                <svg id="iconMoon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-text-bold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                            </button>
+                        </div>
+                        <a href="mailto:agarciactg@gmail.com" class="header-contact__num btn" style="text-transform: lowercase;">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" color="#000000"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            agarciactg@gmail.com
+                        </a>
+                    </div> <!-- end header-contact -->
+                </nav> <!-- end header-nav -->         
+            
+            </div> <!-- end s-header__content -->
+
+        </header> <!-- end s-header -->
+
+
+        <!-- # intro
+        ================================================== -->
+        <section id="intro" class="container s-intro target-section">
+            <div id="particles-js" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 1;"></div>
+            <div class="grid-block s-intro__content" style="z-index: 2; position: relative;">
+
+                <div class="intro-header">
+                    <div class="intro-header__overline" data-i18n="welcome">Welcome to</div>
+                    <h1 class="intro-header__big-type">
+                        <span id="typed-text"></span>
+                    </h1>
+                </div> <!-- end intro-header -->
+
+                <figure class="intro-pic-primary">
+                    <img src="images/home_intro_00.png" 
+                         srcset="images/home_intro_00.png 1x, 
+                         images/home_intro_00.png 2x" alt="" style="border-radius: 5px;">  
+                </figure> <!-- end intro-pic-primary -->    
+                    
+                <div class="intro-block-content">
+
+                    <figure class="intro-block-content__pic" >
+                        <img src="images/home_intro_01_original.png" 
+                             srcset="images/home_intro_01_original.png 1x, 
+                             images/home_intro_01_original.png 2x" alt="" style="border-radius: 5px;">
+                    </figure> <!-- end intro-pic-secondary -->   
+
+                    <div class="intro-block-content__text-wrap">
+                        <p class="intro-block-content__text" data-i18n="presentation">
+                            Loading...
+                        </p>
+                        
+                    </div> <!-- end intro-block-content__social -->   
+
+                </div> <!-- end intro-block-content -->
+
+                <div class="intro-scroll">
+                    <a class="smoothscroll" href="#about">                            
+                        <span class="intro-scroll__circle-text"></span>
+                        <span class="intro-scroll__text u-screen-reader-text">Scroll Down</span>
+                        <div class="intro-scroll__icon">
+                            <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m5.214 14.522s4.505 4.502 6.259 6.255c.146.147.338.22.53.22s.384-.073.53-.22c1.754-1.752 6.249-6.244 6.249-6.244.144-.144.216-.334.217-.523 0-.193-.074-.386-.221-.534-.293-.293-.766-.294-1.057-.004l-4.968 4.968v-14.692c0-.414-.336-.75-.75-.75s-.75.336-.75.75v14.692l-4.979-4.978c-.289-.289-.761-.287-1.054.006-.148.148-.222.341-.221.534 0 .189.071.377.215.52z" fill-rule="nonzero"/></svg>
+                        </div>
+                    </a>
+                </div> <!-- end intro-scroll -->
+
+            </div> <!-- grid-block -->            
+
+        </section> <!-- end s-intro -->
+
+
+        <!-- # about
+        ================================================== -->
+        <section id="about" class="container s-about target-section">
+
+            <div class="row s-about__content">
+
+                <div class="column xl-4 lg-5 md-12 s-about__content-start" data-aos="fade-right">
+
+                    <div class="section-header" data-num="01">
+                        <h2 class="text-display-title" data-i18n="about_me">About me</h2>
+                    </div>  
+
+                    <figure class="about-pic-primary">
+                        <img src="images/perfil_borde_oscuro.png" 
+                             srcset="images/perfil_borde_oscuro.png 1x, 
+                             images/perfil_borde_oscuro.png 2x" alt="" style="border-radius: 7px;"  > 
+                    </figure>
+
+                </div> <!-- end s-about__content-start -->
+
+                <div class="column xl-6 lg-6 md-12 s-about__content-end" data-aos="fade-left" data-aos-delay="200">                   
+                    <p data-i18n="about_me_presentation.paragraph_1">
+                    Ingeniero Informático y Desarrollador Full Stack con más de 5 años de experiencia creando soluciones escalables, seguras y de alta disponibilidad para entornos empresariales y plataformas de alcance internacional.
+                    </p>
+
+                    <p data-i18n="about_me_presentation.paragraph_2">
+                    Especializado en tecnologías backend y frontend modernas como Python (Django, DRF, FastAPI), Node.js, TypeScript, React y Next.js, con experiencia en el diseño de APIs REST, GraphQL y arquitecturas basadas en microservicios.
+                    </p>
+
+                    <p data-i18n="about_me_presentation.paragraph_3">
+                    He participado en proyectos de alto impacto, incluyendo una plataforma global de distribución de vacunas con integración de modelos de predicción logística mediante Optilogic.
+                    </p>
+
+                    <p data-i18n="about_me_presentation.paragraph_4">
+                    También cuento con experiencia en automatización de procesos utilizando n8n y en la integración de modelos de IA como OpenAI GPT y Anthropic Claude para agentes inteligentes y flujos RAG.
+                    </p>
+
+                    <p data-i18n="about_me_presentation.paragraph_5">
+                    Me adapto rápidamente a entornos de alto rendimiento, trabajando de forma colaborativa para construir productos enfocados en eficiencia y escalabilidad.
+                    </p>
+
+                    <p data-i18n="about_me_presentation.paragraph_6">
+                    Apasionado por el aprendizaje continuo y la construcción de experiencias digitales modernas que generen impacto real.
+                    </p>
+
+                    <div style="margin-top: 3rem;">
+                        <a href="files/curriculum_2026_spanish.pdf" download data-i18n="[href]cv_path" class="btn btn--primary btn--large" style="display: inline-flex; align-items: center; gap: 10px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                            <span data-i18n="download_cv">Download CV</span>
+                        </a>
+                    </div>
+
+                    
+                </div> <!--end column -->
+                
+            </div> <!-- end s-about__content-end -->
+            
+        </section> <!-- end s-about -->   
+
+
+        <!-- # tech stack
+        ================================================== -->
+        <section id="tech" class="container s-tech target-section">
+
+            <div class="row s-tech__header" data-aos="fade-up">
+                <div class="column xl-12">
+                    <div class="section-header" data-num="02">
+                        <h2 class="text-display-title" data-i18n="tech_stack_title">My Tech Stack</h2>
+                    </div>
+                    <p class="lead" data-i18n="tech_stack_subtitle" style="color: var(--color-text-light); margin-top: 2rem;">
+                        Technologies I use to build robust and scalable solutions.
+                    </p>
+                </div>
+            </div> <!-- end s-tech__header -->
+
+            <div class="row tech-list" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="tech-item">
+                    <i class="devicon-python-plain colored"></i>
+                    <span>Python</span>
+                </div>
+
+                <div class="tech-item">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <span>Javascript</span>
+                </div>
+
+                <div class="tech-item">
+                    <i class="devicon-typescript-plain colored"></i>
+                    <span>TypeScript</span>
+                </div>
+
+                <div class="tech-item">
+                    <i class="devicon-react-original colored"></i>
+                    <span>React</span>
+                </div>
+
+                <div class="tech-item">
+                    <i class="devicon-nextjs-plain colored"></i>
+                    <span>Next.js</span>
+                </div>
+
+                <div class="tech-item">
+                    <i class="devicon-nodejs-plain colored"></i>
+                    <span>Node.js</span>
+                </div>
+
+                <div class="tech-item">
+                    <i class="devicon-docker-plain colored"></i>
+                    <span>Docker</span>
+                </div>
+
+                <div class="tech-item">
+                    <i class="devicon-fastapi-plain colored"></i>
+                    <span>FastAPI</span>
+                </div>
+
+                <div class="tech-item">
+                    <i class="devicon-django-plain colored"></i>
+                    <span>Django</span>
+                </div>
+
+                <div class="tech-item">
+                    <i class="devicon-flask-plain colored"></i>
+                    <span>Flask</span>
+                </div>
+
+                <div class="tech-item">
+                    <i class="devicon-graphql-plain colored"></i>
+                    <span>GraphQL</span>
+                </div>
+
+                <div class="tech-item">
+                    <i class="devicon-git-plain colored"></i>
+                    <span>Git</span>
+                </div>  
+
+                <div class="tech-item">
+                    <i class="devicon-github-plain colored"></i>
+                    <span>GitHub</span>
+                </div>  
+
+                <div class="tech-item">
+                    <i class="devicon-gitlab-plain colored"></i>
+                    <span>GitLab</span>
+                </div>  
+
+                <div class="tech-item">
+                    <i class="devicon-bitbucket-plain colored"></i>
+                    <span>Bitbucket</span>
+                </div>  
+
+                <div class="tech-item">
+                    <i class="devicon-html5-plain colored"></i>
+                    <span>HTML5</span>
+                </div>  
+
+                <div class="tech-item">
+                    <i class="devicon-css3-plain colored"></i>
+                    <span>CSS3</span>
+                </div>  
+
+                <div class="tech-item">
+                    <i class="devicon-tailwindcss-plain colored"></i>
+                    <span>Tailwind CSS  </span>
+                </div>  
+
+                <div class="tech-item">
+                    <i class="devicon-postgresql-plain colored"></i>
+                    <span>PostgreSQL</span>
+                </div>
+
+                <div class="tech-item">
+                    <i class="devicon-mysql-plain colored"></i>
+                    <span>MySQL</span>
+                </div>
+
+                <div class="tech-item">
+                    <i class="devicon-mongodb-plain colored"></i>
+                    <span>MongoDB</span>
+                </div>
+
+                <div class="tech-item">
+                    <i class="devicon-redis-plain colored"></i>
+                    <span>Redis</span>
+                </div>
+
+                <div class="tech-item">
+                    <i class="devicon-googlecloud-plain colored"></i>
+                    <span>GCP</span>
+                </div>
+
+                <div class="tech-item">
+                    <i class="devicon-azure-plain colored"></i>
+                    <span>Azure</span>
+                </div>  
+
+                <div class="tech-item">
+                    <i class="devicon-jira-plain colored"></i>
+                    <span>Jira</span>
+                </div>  
+
+                <div class="tech-item">
+                    <i class="devicon-trello-plain colored"></i>
+                    <span>Trello</span>
+                </div>  
+
+            </div> <!-- end tech-list -->
+
+        </section> <!-- end s-tech -->
+
+
+        <!-- # services
+        ================================================== -->
+        <section id="services" class="container s-menu target-section">
+
+            <div class="row s-menu__content">
+                
+                <div class="column xl-4 lg-5 md-12 s-menu__content-start" data-aos="fade-right">
+
+                    <div class="section-header" data-num="02">
+                        <h2 class="text-display-title" data-i18n="services">My Services</h2>
+                    </div>  
+
+                    <p class="lead" data-i18n="services_intro" style="color: var(--color-text-light); margin-top: 2rem;">
+                        I offer specialized consulting and development services tailored to the needs of each project.
+                    </p>
+
+                </div> <!-- end s-menu__content-start -->
+
+                <div class="column xl-6 lg-6 md-12 s-menu__content-end" data-aos="fade-left" data-aos-delay="200">
+
+                    <div class="menu-block">
+
+                        <ul class="menu-list">
+                            <li class="menu-list__item">
+                                <div class="menu-list__item-desc">                                            
+                                    <h4 data-i18n="service_hourly.title">Hourly Consulting</h4>
+                                    <p data-i18n="service_hourly.desc">
+                                        Technical advice, architecture review, debugging, or specific integrations.
+                                    </p>
+                                </div>
+                                <a href="#contact" class="smoothscroll">
+                                    <div class="menu-list__item-price" data-i18n="service_hourly.price">
+                                        $25 / hour
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu-list__item">
+                                <div class="menu-list__item-desc">                                            
+                                    <h4 data-i18n="service_freelance.title">Freelance / Part-Time</h4>
+                                    <p data-i18n="service_freelance.desc">
+                                        Development of specific modules, continuous maintenance, or part-time integration in your team.
+                                    </p>
+                                </div>
+                                <a href="#contact" class="smoothscroll">
+                                    <div class="menu-list__item-price" data-i18n="service_freelance.price">
+                                        $2,000 / month
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu-list__item">
+                                <div class="menu-list__item-desc">                                            
+                                    <h4 data-i18n="service_fulltime.title">Full-Time Hiring</h4>
+                                    <p data-i18n="service_fulltime.desc">
+                                        100% dedication to your project, leading technical decisions and full stack development.
+                                    </p>
+                                </div>
+                                <a href="#contact" class="smoothscroll">
+                                    <div class="menu-list__item-price" data-i18n="service_fulltime.price">
+                                        $25,000 / year
+                                    </div>
+                                </a>
+                            </li>
+                        </ul> <!-- end menu-list -->
+
+                    </div> <!-- menu-block -->
+
+                </div> <!--end column -->
+                
+            </div> <!-- end s-menu__content-end -->
+            
+        </section> <!-- end s-menu -->
+        <!-- # projects
+        ================================================== -->
+        <section id="projects" class="container s-gallery target-section">
+
+            <div class="row s-gallery__header" data-aos="fade-up">
+                <div class="column xl-12 section-header-wrap">
+                    <div class="section-header" data-num="03">
+                        <h2 class="text-display-title" data-i18n="projects">My Projects</h2>
+                    </div>               
+                </div> <!-- end section-header-wrap -->   
+            </div> <!-- end s-gallery__header -->   
+
+            <div class="gallery-items" style="padding-top: 2rem; gap: 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+
+                <div class="project-card" data-aos="fade-up" style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h4 data-i18n="project_1.title" style="margin-top: 0; color: var(--color-white);">Ticketing System - backend</h4>
+                        <p data-i18n="project_1.desc" style="color: var(--color-text-light); font-size: 1.4rem;">
+                            System web of ticketing with: FastAPI, PostgreSQL and Docker.
+                            Allows you to create, manage and track incidents with authentication via Google OAuth 2.0.
+                        </p>
+                    </div>
+                    <a href="https://github.com/agarciactg/vortex-back" target="_blank" style="color: var(--color-primary); font-weight: bold; text-transform: uppercase; font-size: 1.2rem; letter-spacing: 1px; display: inline-block; margin-top: 1rem;">View on GitHub</a>
+                </div> <!-- end project-card -->
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100" style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h4 data-i18n="project_2.title" style="margin-top: 0; color: var(--color-white);">Ticketing System - frontend</h4>
+                        <p data-i18n="project_2.desc" style="color: var(--color-text-light); font-size: 1.4rem;">
+                            Modern ticket management interface built with Next.js, Ant Design, and Tailwind CSS. It provides a seamless user experience for managing incidents and interacting with an AI-powered assistant.
+                        </p>
+
+                        <!-- Project Images Slider -->
+                        <div style="margin-top: 1.5rem; display: flex; gap: 1rem; overflow-x: auto; padding-bottom: 1rem; scrollbar-width: thin; scrollbar-color: var(--color-primary) transparent;">
+                            <img src="images/portfolio/ticketer_1.png" alt="Ticketer Welcome" style="height: 140px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); object-fit: cover; cursor: pointer; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                            <img src="images/portfolio/ticketer_2.png" alt="Ticketer Dashboard" style="height: 140px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); object-fit: cover; cursor: pointer; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                            <img src="images/portfolio/ticketer_3.png" alt="Ticketer Management" style="height: 140px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); object-fit: cover; cursor: pointer; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                            <img src="images/portfolio/ticketer_4.png" alt="Ticketer Notifications" style="height: 140px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); object-fit: cover; cursor: pointer; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                            <img src="images/portfolio/ticketer_5.png" alt="Ticketer AI Assistant" style="height: 140px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); object-fit: cover; cursor: pointer; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                        </div>
+
+                    </div>
+                    <a href="https://github.com/agarciactg/vortex-front" target="_blank" style="color: var(--color-primary); font-weight: bold; text-transform: uppercase; font-size: 1.2rem; letter-spacing: 1px; display: inline-block; margin-top: 1.5rem;">View on GitHub</a>
+                </div> <!-- end project-card -->
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200" style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h4 data-i18n="project_3.title" style="margin-top: 0; color: var(--color-white);">Fisio Elite - Back</h4>
+                        <p data-i18n="project_3.desc" style="color: var(--color-text-light); font-size: 1.4rem;">
+                            [Python] Core backend infrastructure for the Fisio Elite platform. Elaborate on endpoints and features.
+                        </p>
+                    </div>
+                    <a href="https://github.com/agarciactg/fisio-elite-back" target="_blank" style="color: var(--color-primary); font-weight: bold; text-transform: uppercase; font-size: 1.2rem; letter-spacing: 1px; display: inline-block; margin-top: 1rem;">View on GitHub</a>
+                </div> <!-- end project-card -->
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300" style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h4 data-i18n="project_4.title" style="margin-top: 0; color: var(--color-white);">Fisio Elite - Front</h4>
+                        <p data-i18n="project_4.desc" style="color: var(--color-text-light); font-size: 1.4rem;">
+                            This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules. Currently, two official plugins are available.
+                        </p>
+
+                        <!-- Project Images Slider -->
+                        <div style="margin-top: 1.5rem; display: flex; gap: 1rem; overflow-x: auto; padding-bottom: 1rem; scrollbar-width: thin; scrollbar-color: var(--color-primary) transparent;">
+                            <img src="images/portfolio/fisio_1.png" alt="Ticketer Welcome" style="height: 140px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); object-fit: cover; cursor: pointer; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                            <img src="images/portfolio/fisio_2.png" alt="Ticketer Dashboard" style="height: 140px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); object-fit: cover; cursor: pointer; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                            <img src="images/portfolio/fisio_3.png" alt="Ticketer Management" style="height: 140px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); object-fit: cover; cursor: pointer; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                            <img src="images/portfolio/fisio_4.png" alt="Ticketer Notifications" style="height: 140px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); object-fit: cover; cursor: pointer; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                            <img src="images/portfolio/fisio_5.png" alt="Ticketer AI Assistant" style="height: 140px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); object-fit: cover; cursor: pointer; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                        </div>
+
+                    </div>
+                    <a href="https://github.com/agarciactg/fisio-elite-front" target="_blank" style="color: var(--color-primary); font-weight: bold; text-transform: uppercase; font-size: 1.2rem; letter-spacing: 1px; display: inline-block; margin-top: 1rem;">View on GitHub</a>
+                </div> <!-- end project-card -->
+
+                <div class="project-card" data-aos="fade-up" style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h4 data-i18n="project_5.title" style="margin-top: 0; color: var(--color-white);">inverco-back</h4>
+                        <p data-i18n="project_5.desc" style="color: var(--color-text-light); font-size: 1.4rem;">
+                            This project is a Django backend with a PostgreSQL database, caching with Redis, authentication with API Key, and use of the Google Places API for restaurant search.
+                        </p>
+                    </div>
+                    <a href="https://github.com/agarciactg/inverco-back" target="_blank" style="color: var(--color-primary); font-weight: bold; text-transform: uppercase; font-size: 1.2rem; letter-spacing: 1px; display: inline-block; margin-top: 1rem;">View on GitHub</a>
+                </div> <!-- end project-card -->
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100" style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h4 data-i18n="project_6.title" style="margin-top: 0; color: var(--color-white);">inverco-front</h4>
+                        <p data-i18n="project_6.desc" style="color: var(--color-text-light); font-size: 1.4rem;">
+                            This project is an administrative dashboard for the InverColombia platform.
+                            It uses React.js along with Material-UI and communicates with a backend through a REST API.
+                        </p>
+                    </div>
+                    <a href="https://github.com/agarciactg/inverco-front" target="_blank" style="color: var(--color-primary); font-weight: bold; text-transform: uppercase; font-size: 1.2rem; letter-spacing: 1px; display: inline-block; margin-top: 1rem;">View on GitHub</a>
+                </div> <!-- end project-card -->
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200" style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h4 data-i18n="project_6.title" style="margin-top: 0; color: var(--color-white);">Monitoring Prevalentware</h4>
+                        <p data-i18n="project_6.desc" style="color: var(--color-text-light); font-size: 1.4rem;">
+                            Este proyecto de monitoreo está diseñado para realizar un seguimiento y análisis de datos relacionados con el uso del sistema Prevalentware. Proporciona funcionalidades para la obtención de información de usuarios y otros aspectos relevantes.
+                        </p>
+                    </div>
+                    <a href="https://github.com/agarciactg/monitoring-prevalentware" target="_blank" style="color: var(--color-primary); font-weight: bold; text-transform: uppercase; font-size: 1.2rem; letter-spacing: 1px; display: inline-block; margin-top: 1rem;">View on GitHub</a>
+                </div> <!-- end project-card -->
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300" style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h4 data-i18n="project_6.title" style="margin-top: 0; color: var(--color-white);">Car Gov</h4>
+                        <p data-i18n="project_6.desc" style="color: var(--color-text-light); font-size: 1.4rem;">
+                            This repo contains the code and documentation for the car web application and services.
+                        </p>
+                    </div>
+                    <a href="https://github.com/agarciactg/car-gov" target="_blank" style="color: var(--color-primary); font-weight: bold; text-transform: uppercase; font-size: 1.2rem; letter-spacing: 1px; display: inline-block; margin-top: 1rem;">View on GitHub</a>
+                </div> <!-- end project-card -->
+            </div> <!-- end grid-list-items -->
+
+        </section> <!-- end s-projects -->  
+
+        <!-- # contact
+        ================================================== -->
+        <section id="contact" class="container s-contact target-section" style="padding-top: var(--vspace-4); padding-bottom: var(--vspace-4); background-color: var(--color-bg);">
+            <div class="row s-contact__header">
+                <div class="column xl-12">
+                    <div class="section-header" data-num="04">
+                        <h2 class="text-display-title" data-i18n="contact_me_title">Get in Touch</h2>
+                    </div>
+                    <p class="lead" data-i18n="contact_me_subtitle" style="color: var(--color-text-light); margin-top: 2rem;">
+                        Have a project in mind or want to explore an opportunity? Let's talk!
+                    </p>
+                </div>
+            </div>
+
+            <div class="row s-contact__form" data-aos="fade-up" data-aos-delay="200" style="margin-top: 2rem;">
+                <div class="column xl-8 lg-10 md-12">
+                    <form id="contactForm" class="contact-form" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_subject" value="¡Nuevo Mensaje del Portafolio!">
+                        <input type="hidden" name="_template" value="box">
+                        <input type="hidden" name="_captcha" value="false">
+                        
+                        <!-- Anti-Spam Honeypot -->
+                        <input type="text" name="_honey" style="display:none">
+                        
+                        <input type="text" name="name" placeholder="Your Name" required data-i18n="[placeholder]contact_form_name" style="width: 100%; padding: 1.5rem; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); color: #fff; border-radius: 8px; transition: border-color 0.3s ease;">
+                        <input type="email" name="email" placeholder="Your Email" required data-i18n="[placeholder]contact_form_email" style="width: 100%; padding: 1.5rem; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); color: #fff; border-radius: 8px; transition: border-color 0.3s ease;">
+                        <textarea name="message" placeholder="Your Message" required data-i18n="[placeholder]contact_form_message" rows="5" style="width: 100%; padding: 1.5rem; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); color: #fff; border-radius: 8px; resize: vertical; transition: border-color 0.3s ease;"></textarea>
+                        
+                        <button type="submit" id="submitBtn" class="btn btn--primary" data-i18n="contact_form_submit" style="align-self: flex-start; margin-top: 1rem;">Send Message</button>
+                        <div id="formSuccess" data-i18n="contact_form_success" style="display: none; color: #4caf50; margin-top: 1rem; font-weight: bold;">Message sent successfully!</div>
+                    </form>
+                </div>
+            </div>
+            
+            <script>
+                document.getElementById('contactForm').addEventListener('submit', function(e) {
+                    e.preventDefault(); // Prevent page reload
+                    
+                    const successMsg = document.getElementById('formSuccess');
+                    const btn = document.getElementById('submitBtn');
+                    const originalBtnText = btn.innerText;
+                    
+                    btn.innerText = 'Sending...';
+                    btn.disabled = true;
+
+                    fetch("https://formsubmit.co/ajax/agarciactg@gmail.com", {
+                        method: "POST",
+                        body: new FormData(this),
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        successMsg.style.display = 'block';
+                        this.reset();
+                        btn.innerText = originalBtnText;
+                        btn.disabled = false;
+                        setTimeout(() => { successMsg.style.display = 'none'; }, 5000);
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        btn.innerText = originalBtnText;
+                        btn.disabled = false;
+                        alert("Hubo un error enviando el mensaje. Por favor intenta de nuevo más tarde.");
+                    });
+                });
+            </script>
+        </section> <!-- end s-contact -->
+        
+        <!-- # footer 
+        ================================================== -->
+        <footer id="footer" class="container s-footer">  
+            
+            <div class="row s-footer__top row-x-center">
+
+            </div> <!-- end s-footer__top -->         
+
+            <div class="row s-footer__main">             
+                <div class="column xl-3 lg-12 footer-block s-footer__main-start">     
+
+                    <div class="s-footer__logo">
+                        <a class="logo" href="index.html">
+                            <img src="images/icon_not_background.png" alt="Homepage">
+                        </a>
+                    </div>  
+
+                    <ul class="s-footer__social social-list">
+                        <li>
+                            <a href="https://www.linkedin.com/in/agarciactg/" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);"><path d="M22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003zM7.12 20.452H3.555V9h3.565v11.452zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm15.11 13.019h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286z"></path></svg>
+                                <span class="u-screen-reader-text">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/agarciactg" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+                                <span class="u-screen-reader-text">GitHub</span>
+                            </a>
+                        </li>
+                    </ul> <!--end s-footer__social -->
+
+                </div> <!-- end s-footer__main-start -->
+                
+
+                <div class="column xl-9 lg-12 s-footer__main-end grid-cols grid-cols--wrap">
+
+                    <div class="grid-cols__column footer-block">
+                        <h6 data-i18n="location_title">Location</h6>
+                        <p>
+                        Medellín<br>
+                        Colombia
+                        </p>
+                    </div>
+                    
+                    <div class="grid-cols__column footer-block">     
+                        <h6 data-i18n="contact_title">Contacts</h6>
+                        <ul class="link-list">
+                            <li><a href="mailto:#0">agarciactg@gmail.com</a></li>
+                            <li><a href="https://www.linkedin.com/in/agarciactg/">in/agarciactg/</a></li>
+                        </ul> 
+                    </div>
+                    
+                    <div class="grid-cols__column footer-block">                   
+                        <h6 data-i18n="opening_hours_title">Opening Hours</h6>
+                        <ul class="opening-hours">
+                            <li><span class="opening-hours__days" data-i18n="weekdays">Weekdays</span><span class="opening-hours__time">8:00am - 6:00pm</span></li>
+                            <li><span class="opening-hours__days" data-i18n="weekends">Weekends</span><span class="opening-hours__time">9:00am - 12:00pm</span></li>
+                        </ul> 
+                    </div>  
+
+                </div> <!-- s-footer__main-end -->                  
+
+            </div> <!-- end  s-footer__main-content -->                 
+            
+            <div class="row s-footer__bottom">       
+                
+                <div class="column xl-6 lg-12">
+                    <p class="ss-copyright">
+                        <span>© agarciactg <span id="current-year">2026</span></span> 
+                    </p>
+                </div>
+
+            </div> <!-- end s-footer__bottom -->          
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">                 
+                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z" fill-rule="nonzero"/></svg>
+                </a>                                
+                <span>Back To Top</span>   
+            </div> <!-- end ss-go-top -->
+        </footer> <!-- end s-footer -->
+
+        <!-- Image Lightbox Modal 
+        ================================================== -->
+        <div id="imageModal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.9); flex-direction: column; align-items: center; justify-content: center; backdrop-filter: blur(5px);">
+            <span id="closeModal" style="position: absolute; top: 20px; right: 35px; color: #f1f1f1; font-size: 40px; font-weight: bold; cursor: pointer;">&times;</span>
+            <img id="modalImage" style="max-width: 90%; max-height: 90%; margin: auto; display: block; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.5); object-fit: contain;">
+        </div>
+
+        <script>
+            // Simple Lightbox Logic
+            document.addEventListener("DOMContentLoaded", function() {
+                const modal = document.getElementById("imageModal");
+                const modalImg = document.getElementById("modalImage");
+                const closeBtn = document.getElementById("closeModal");
+                
+                // Select all images inside the project slider
+                const sliderImages = document.querySelectorAll(".project-card img");
+                
+                sliderImages.forEach(img => {
+                    img.addEventListener("click", function() {
+                        modal.style.display = "flex";
+                        modalImg.src = this.src;
+                    });
+                });
+
+                // Close modal on close button click
+                closeBtn.addEventListener("click", function() {
+                    modal.style.display = "none";
+                });
+
+                // Close modal when clicking outside the image
+                modal.addEventListener("click", function(e) {
+                    if (e.target !== modalImg) {
+                        modal.style.display = "none";
+                    }
+                });
+            });
+        </script>
+
+    </div> <!-- end page-wrap -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- i18next Library -->
+    <script src="https://unpkg.com/i18next@23.11.2/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend@2.5.0/i18nextHttpBackend.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector@7.2.1/i18nextBrowserLanguageDetector.min.js"></script>
+    
+    <!-- i18n logic -->
+    <script src="js/i18n.js"></script>
+
+    <!-- Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var typed = new Typed('#typed-text', {
+                strings: ['Soy Andrés García.', 'Soy Desarrollador Full Stack.', 'Especialista en Python &amp; Next.js.'],
+                typeSpeed: 60,
+                backSpeed: 40,
+                backDelay: 1500,
+                startDelay: 500,
+                loop: true,
+                showCursor: true,
+                cursorChar: '|'
+            });
+            
+            // Store typed instance globally so i18n can update it if needed
+            window.heroTyped = typed;
+        });
+    </script>
+
+    <!-- AOS Animate On Scroll -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 80
+        });
+    </script>
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 60, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#ffffff" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.3, "random": false },
+                "size": { "value": 3, "random": true },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.2,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 2,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": { "enable": true, "mode": "grab" },
+                    "onclick": { "enable": true, "mode": "push" },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": { "distance": 140, "line_linked": { "opacity": 1 } },
+                    "push": { "particles_nb": 4 }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <script>
+        const cursorDot = document.querySelector("[data-cursor-dot]");
+        const cursorOutline = document.querySelector("[data-cursor-outline]");
+
+        // Track mouse movement
+        window.addEventListener("mousemove", function (e) {
+            const posX = e.clientX;
+            const posY = e.clientY;
+
+            cursorDot.style.left = `${posX}px`;
+            cursorDot.style.top = `${posY}px`;
+
+            // Adding a tiny delay to the outline makes it look more fluid
+            cursorOutline.animate({
+                left: `${posX}px`,
+                top: `${posY}px`
+            }, { duration: 500, fill: "forwards" });
+        });
+
+        // Hover effect over clickable elements
+        const clickables = document.querySelectorAll("a, button, input, textarea, .smoothscroll");
+        
+        clickables.forEach(link => {
+            link.addEventListener("mouseover", () => {
+                cursorOutline.classList.add("hover");
+            });
+            link.addEventListener("mouseleave", () => {
+                cursorOutline.classList.remove("hover");
+            });
+        });
+    </script>
+</body>
+</html>

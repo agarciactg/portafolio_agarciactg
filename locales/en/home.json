@@ -1,0 +1,97 @@
+{
+    "presentation": "Building scalable, secure and intelligent Full Stack solutions with over 5 years of experience in backend, microservices, automation and AI integration for high-impact, global projects.",
+    "welcome": "Hi, 👋",
+    "typed_strings": [
+        "I am Andrés García.",
+        "I am a Full Stack Developer.",
+        "Python &amp; Javascript Specialist."
+    ],
+    "nav_services": "Services",
+    "services": "My Services",
+    "services_intro": "I offer specialized consulting and development services tailored to the needs of each project.",
+    "service_hourly": {
+        "title": "Technical Consulting",
+        "desc": "Technical advice, architecture review, debugging, or specific integrations.",
+        "price": "Let's talk →"
+    },
+    "service_freelance": {
+        "title": "Freelance / Part-Time",
+        "desc": "Development of specific modules, continuous maintenance, or part-time integration in your team.",
+        "price": "Let's talk →"
+    },
+    "service_fulltime": {
+        "title": "Full-Time Hiring",
+        "desc": "100% dedication to your project, leading technical decisions and full stack development.",
+        "price": "Let's talk →"
+    },
+    "about_me": "About Me",
+    "about_me_presentation": {
+        "paragraph_1": "Computer Engineer and Full Stack Developer with over 5 years of experience creating scalable, secure, and high-availability solutions for enterprise environments and international platforms.",
+        "paragraph_2": "Specializing in modern backend and frontend technologies such as Python (Django, DRF, FastAPI), Node.js, TypeScript, React, and Next.js, with experience in designing REST APIs, GraphQL, and microservices-based architectures.",
+        "paragraph_3": "I have participated in high-impact projects, including a global vaccine distribution platform with integration of logistics prediction models using Optilogic, optimizing resources and processes at a large scale.",
+        "paragraph_4": "I also have experience in process automation using n8n and in integrating artificial intelligence models such as OpenAI GPT and Anthropic Claude for creating intelligent agents, RAG flows, and LLM-powered solutions.",
+        "paragraph_5": "I adapt quickly to high-performance environments, working collaboratively with technical and business teams to build products focused on efficiency, scalability, and real results.",
+        "paragraph_6": "Passionate about continuous learning, good development practices, and building modern digital experiences that generate impact and value in every project."
+    },
+    "nav_projects": "Projects",
+    "projects": "My Projects",
+    "project_1": {
+        "title": "Ticketing System - backend",
+        "desc": "System web of ticketing with: FastAPI, PostgreSQL and Docker. Allows you to create, manage and track incidents with authentication via Google OAuth 2.0."
+    },
+    "project_2": {
+        "title": "Ticketing System - frontend",
+        "desc": "Modern ticket management interface built with Next.js, Ant Design, and Tailwind CSS. It provides a seamless user experience for managing incidents and interacting with an AI-powered assistant."
+    },
+    "project_3": {
+        "title": "Fisio Elite - Back",
+        "desc": "[Python] Core backend infrastructure for the Fisio Elite platform. Elaborate on endpoints and features."
+    },
+    "project_4": {
+        "title": "Fisio Elite - Front",
+        "desc": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules. Currently, two official plugins are available."
+    },
+    "project_5": {
+        "title": "Inverco - Back",
+        "desc": "This project is a Django backend with a PostgreSQL database, caching with Redis, authentication with API Key, and use of the Google Places API for restaurant search."
+    },
+    "project_6": {
+        "title": "Inverco - Front",
+        "desc": "This project is an administrative dashboard for the InverColombia platform. It uses React.js along with Material-UI and communicates with a backend through a REST API."
+    },
+    "location_title": "Location",
+    "contact_title": "Contacts",
+    "opening_hours_title": "Opening Hours",
+    "weekdays": "Weekdays",
+    "weekends": "Weekends",
+    "download_cv": "Download CV",
+    "cv_path": "files/curriculum_2026_english.pdf",
+    "tech_stack_title": "My Tech Stack",
+    "tech_stack_subtitle": "Technologies I use to build robust and scalable solutions.",
+    "experience_title": "Work Experience",
+    "exp_1": {
+        "role": "Senior Full Stack Developer",
+        "company": "Global Projects / Freelance",
+        "date": "2023 - Present",
+        "desc": "Leading the design of high-performance architectures, AI integrations (LLMs, RAG), and automated workflows for international clients."
+    },
+    "exp_2": {
+        "role": "Full Stack Engineer",
+        "company": "Tech Innovation Hub",
+        "date": "2021 - 2023",
+        "desc": "Developed scalable microservices using Python and Node.js. Optimized database performance and CI/CD pipelines."
+    },
+    "exp_3": {
+        "role": "Backend Developer",
+        "company": "Solutions Corp",
+        "date": "2019 - 2021",
+        "desc": "Built robust RESTful APIs and integrated payment gateways. Focused on security and system reliability."
+    },
+    "contact_me_title": "Get in Touch",
+    "contact_me_subtitle": "Have a project in mind or want to explore an opportunity? Let's talk!",
+    "contact_form_name": "Your Name",
+    "contact_form_email": "Your Email",
+    "contact_form_message": "Your Message",
+    "contact_form_submit": "Send Message",
+    "contact_form_success": "Message sent successfully!"
+}

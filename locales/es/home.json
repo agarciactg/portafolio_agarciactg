@@ -1,0 +1,97 @@
+{
+    "presentation": "Construyendo soluciones Full Stack escalables, seguras e inteligentes con más de 5 años de experiencia en backend, microservicios, automatización e integración de IA para proyectos de alto impacto y alcance global.",
+    "welcome": "Hola, 👋",
+    "typed_strings": [
+        "Soy Andrés García.",
+        "Soy Desarrollador Full Stack.",
+        "Especialista en Python &amp; Javascript."
+    ],
+    "nav_services": "Servicios",
+    "services": "Mis Servicios",
+    "services_intro": "Ofrezco servicios especializados de consultoría y desarrollo adaptados a las necesidades de cada proyecto.",
+    "service_hourly": {
+        "title": "Consultoría Técnica",
+        "desc": "Asesoría técnica, revisión de arquitectura, debugging o integraciones puntuales.",
+        "price": "Hablemos →"
+    },
+    "service_freelance": {
+        "title": "Freelance / Medio Tiempo",
+        "desc": "Desarrollo de módulos específicos, mantenimiento continuo o integración parcial en tu equipo.",
+        "price": "Hablemos →"
+    },
+    "service_fulltime": {
+        "title": "Contratación Full-Time",
+        "desc": "Dedicación 100% a tu proyecto, liderando decisiones técnicas y desarrollo full stack.",
+        "price": "Hablemos →"
+    },
+    "about_me": "Sobre Mí",
+    "about_me_presentation": {
+        "paragraph_1": "Ingeniero Informático y Desarrollador Full Stack con más de 5 años de experiencia creando soluciones escalables, seguras y de alta disponibilidad para entornos empresariales y plataformas de alcance internacional.",
+        "paragraph_2": "Especializado en tecnologías backend y frontend modernas como Python (Django, DRF, FastAPI), Node.js, TypeScript, React y Next.js, con experiencia en el diseño de APIs REST, GraphQL y arquitecturas basadas en microservicios.",
+        "paragraph_3": "He participado en proyectos de alto impacto, incluyendo una plataforma global de distribución de vacunas con integración de modelos de predicción logística mediante Optilogic, optimizando recursos y procesos a gran escala.",
+        "paragraph_4": "También cuento con experiencia en automatización de procesos utilizando n8n y en la integración de modelos de inteligencia artificial como OpenAI GPT y Anthropic Claude para la creación de agentes inteligentes, flujos RAG y soluciones impulsadas por LLMs.",
+        "paragraph_5": "Me adapto rápidamente a entornos de alto rendimiento, trabajando de forma colaborativa con equipos técnicos y de negocio para construir productos enfocados en eficiencia, escalabilidad y resultados reales.",
+        "paragraph_6": "Apasionado por el aprendizaje continuo, las buenas prácticas de desarrollo y la construcción de experiencias digitales modernas que generen impacto y valor en cada proyecto."
+    },
+    "nav_projects": "Proyectos",
+    "projects": "Mis Proyectos",
+    "project_1": {
+        "title": "Ticketing System - backend",
+        "desc": "Sistema web de gestión de incidencias con FastAPI, PostgreSQL y Docker. Permite crear, gestionar y realizar el seguimiento de incidencias con autenticación mediante Google OAuth 2.0."
+    },
+    "project_2": {
+        "title": "Ticketing System - frontend",
+        "desc": "Interfaz moderna de gestión de incidencias construida con Next.js, Ant Design y Tailwind CSS. Proporciona una experiencia de usuario fluida para gestionar incidencias e interactuar con un asistente impulsado por IA."
+    },
+    "project_3": {
+        "title": "Fisio Elite - Back",
+        "desc": "Infraestructura central backend para la plataforma Fisio Elite. Detalla los endpoints."
+    },
+    "project_4": {
+        "title": "Fisio Elite - Front",
+        "desc": "Esta plantilla proporciona una configuración mínima para que React funcione en Vite con HMR y algunas reglas de ESLint. Actualmente, hay dos complementos oficiales disponibles."
+    },
+    "project_5": {
+        "title": "Inverco - Back",
+        "desc": "Este proyecto es un backend en Django con base de datos en PostgreSQL, cacheo con Redis, autenticación con API Key y uso de la API de Google Places para búsqueda de restaurantes."
+    },
+    "project_6": {
+        "title": "Inverco - Front",
+        "desc": "Este proyecto es un dashboard administrativo para la plataforma InverColombia. Utiliza React.js junto con Material-UI y se comunica con un backend a través de una API REST."
+    },
+    "location_title": "Ubicación",
+    "contact_title": "Contacto",
+    "opening_hours_title": "Horario de atención",
+    "weekdays": "Días de semana",
+    "weekends": "Fines de semana",
+    "download_cv": "Descargar CV",
+    "cv_path": "files/curriculum_2026_spanish.pdf",
+    "tech_stack_title": "Mi Stack Tecnológico",
+    "tech_stack_subtitle": "Tecnologías que utilizo para construir soluciones robustas y escalables.",
+    "experience_title": "Experiencia Profesional",
+    "exp_1": {
+        "role": "Senior Full Stack Developer",
+        "company": "Proyectos Globales / Freelance",
+        "date": "2023 - Presente",
+        "desc": "Liderando el diseño de arquitecturas de alto rendimiento, integraciones de IA (LLMs, RAG) y flujos de trabajo automatizados para clientes internacionales."
+    },
+    "exp_2": {
+        "role": "Ingeniero Full Stack",
+        "company": "Hub de Innovación Tecnológica",
+        "date": "2021 - 2023",
+        "desc": "Desarrollo de microservicios escalables con Python y Node.js. Optimización de bases de datos y tuberías CI/CD para despliegues continuos."
+    },
+    "exp_3": {
+        "role": "Desarrollador Backend",
+        "company": "Solutions Corp",
+        "date": "2019 - 2021",
+        "desc": "Construcción de APIs REST robustas e integración de pasarelas de pago. Enfoque en seguridad y alta disponibilidad del sistema."
+    },
+    "contact_me_title": "Contáctame",
+    "contact_me_subtitle": "¿Tienes un proyecto en mente o quieres explorar una oportunidad? ¡Hablemos!",
+    "contact_form_name": "Tu Nombre",
+    "contact_form_email": "Tu Correo Electrónico",
+    "contact_form_message": "Tu Mensaje",
+    "contact_form_submit": "Enviar Mensaje",
+    "contact_form_success": "¡Mensaje enviado con éxito!"
+}
