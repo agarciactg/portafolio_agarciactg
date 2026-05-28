@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
       .use(i18nextBrowserLanguageDetector)
       .init({
         fallbackLng: 'es', // Default language
+        supportedLngs: ['es', 'en'],
+        load: 'languageOnly',
         debug: true,       // Helpful for development, remove in production
         ns: ['home'],      // Tell i18next to load home.json
         defaultNS: 'home', // Default namespace is home.json
